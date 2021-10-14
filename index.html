@@ -7,24 +7,27 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <title>J.P.S.</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-light">
-      <a class="navbar-brand" href="#">J.P.S. Portfolio</a> 
+    <nav class="navbar fixed-left navbar-expand-md navbar-light">
+      <a class="navbar-brand raleway" href="#">J.P.S. Portfolio</a> 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse form-inline">
         <ul class="navbar-nav ml-auto form-inline">
-          <li class="nav-item active">
+          <li class="nav-item active raleway">
             <a class="nav-link" href="#about-me">About Me</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item active raleway">
             <a class="nav-link" href="#social-media">Social Media</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item active raleway">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
         </ul>
@@ -32,61 +35,80 @@
     </nav>
     <div class="container">
       <div class="row main">
-        <div class="col-7" id="about-me">
-          <div class="row">
-            <div class="col-12">
-              <h1>John Paul Schmidt</h1>
-              <h2>Writer and Coder for hire.</h2>
-              <h2>About Me</h2>
-              <p>I am a former journalist and a current freelance copywriter. During my search for the next big step in my life, I discovered a passion for web development. I am in the middle of Altcademy's bootcamp. We'll see where I end up afterward.</p>
-            </div>
-            <div class="col-12 social-media">
-              <button class="social-button">
-                <i class="fab fa-linkedin"></i>
-                <p class="inline">LinkedIn</p>
+        <div class="col-7">
+          <div class="nameplate">
+            <h1>John Paul Schmidt</h1>
+            <h2>Writer and Coder for hire.</h2>
+            <div class="button-box" id="social-media">
+              <button class="social-button button-left">
+                <a href="https://www.linkedin.com/in/john-paul-schmidt-b1306941" target="#">
+                  <div class="button-contents">
+                    <i class="fab fa-linkedin" id="icon"></i>
+                    <p class="button-label">LinkedIn</p>
+                  </div>
+                </a>
               </button>
-              <button class="social-button">
-                <i class="fab fa-github"></i>
-                <p class="inline">GitHub</p>
+              <button class="social-button button-right">
+                <a href="https://www.github.com/ZioXerXes" target="#">
+                  <div class="button-contents">
+                    <i class="fab fa-github" id="icon"></i>
+                    <p class="button-label">GitHub</p>
+                  </div>
+                </a>
               </button>
-            </div>
-            <div class="col-6">
-              <div class="project-box">
-                <img src="https://picsum.photos/300/200">
-                <p>Future Project</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="project-box">
-                <img src="https://picsum.photos/300/200">
-                <p>Future Project</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="project-box">
-                <img src="https://picsum.photos/300/200">
-                <p>Future Project</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="project-box">
-                <img src="https://picsum.photos/300/200">
-                <p>Future Project</p>
-              </div>
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-5">
           <img class="picture" src="images/KA2_2702-2_websize.jpg">
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="portfolio-head" id="projects">Portfolio</p>
+        </div>
+        <div class="col-6 project-1">
+          <div class="project-box">
+            <img src="https://picsum.photos/300/200">
+            <p class="project-title">Future Project</p>
+          </div>
+        </div>
+        <div class="col-6 project-2">
+          <div class="project-box">
+            <img src="https://picsum.photos/300/200">
+            <p class="project-title">Future Project</p>
+          </div>
+        </div>
+        <div class="col-6 project-3">
+          <div class="project-box">
+            <img src="https://picsum.photos/300/200">
+            <p class="project-title">Future Project</p>
+          </div>
+        </div>
+        <div class="col-6 project-4">
+          <div class="project-box">
+            <img src="https://picsum.photos/300/200">
+            <p class="project-title">Future Project</p>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <div class="row about-me-section" id="about-me">
+        <div class="col-12 about-me">
+          <img src="images/typewriter.jpg" class="typewriter">
+        </div>
+        <div class="col-12 about-me">
+          <h2>About Me</h2>
+        </div>
+        <div class="col-12 about-me">
+          <p class="bio">I am a former journalist and a current freelance copywriter. During my search for the next big step in my life, I discovered a passion for web development. I am in the middle of Altcademy's bootcamp. We'll see where I end up afterward.</p>
         </div>
       </div>
     </div>
     <div class="footer container">
       <div class="row">
         <div class="col-12">
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-github"></i>
-          <i class="fab fa-twitter-square"></i>
         </div>
       </div>
     </div>
